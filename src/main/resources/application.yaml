@@ -6,7 +6,6 @@ logging:
     root: INFO
     org.springframework.web: INFO
     org.springframework.security: INFO
-#    org.springframework.boot.autoconfigure: DEBUG
 
 spring:
   thymeleaf:
@@ -16,12 +15,12 @@ spring:
       client:
         registration:
           okta:
-            client-id: 0oaex0pwexo15qIHu0h7
-            client-secret: remoCDeK42gqFZxBDCfrNmopcIc_Kjfu-dklqCsD
+            client-id: your-okta-client-id
+            client-secret: your-okta-client-secret
         provider:
           okta:
-            authorization-uri: https://dev-860434.oktapreview.com/oauth2/v1/authorize
-            token-uri: https://dev-860434.oktapreview.com/oauth2/v1/token
-            user-info-uri: https://dev-860434.oktapreview.com/oauth2/v1/userinfo
+            authorization-uri: https://<your-okta-subdomain>.oktapreview.com/oauth2/v1/authorize
+            token-uri: https://<your-okta-subdomain>.oktapreview.com/oauth2/v1/token
+            user-info-uri: https://<your-okta-subdomain>.oktapreview.com/oauth2/v1/userinfo
             user-name-attribute: sub
-            jwk-set-uri: https://dev-860434.oktapreview.com/oauth2/v1/keys
+            jwk-set-uri: https://<your-okta-subdomain>.oktapreview.com/oauth2/v1/keys
